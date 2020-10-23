@@ -18,11 +18,11 @@ Stylesheet: ベーススタイル(スマホ)
   font-size: 25x;
 }
 
-.mb-sm, .about__title, .about__img, .contents__title {
+.mb-sm, .about__title, .about__img, .contents__title, .inquiry__title, .inquiry__input {
   margin-bottom: 16px !important;
 }
 
-.mb-lg, .header, .about, .contents {
+.mb-lg, .header, .about, .contents, .inquiry {
   margin-bottom: 80px !important;
 }
 
@@ -34,7 +34,7 @@ Stylesheet: ベーススタイル(スマホ)
   padding-bottom: 80px !important;
 }
 
-.content-width, .about, .contents {
+.content-width, .about, .contents, .inquiry, .footer {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -156,6 +156,44 @@ Stylesheet: ベーススタイル(スマホ)
   width: 100%;
 }
 
+.inquiry__title {
+  text-align: center;
+}
+
+.inquiry__p {
+  text-align: center;
+}
+
+.inquiry__input {
+  margin: 0 auto;
+  display: block;
+  border: 3px solid #eaebe6;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 50px;
+}
+
+.inquiry__button {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f76a5b;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.footer__copyright {
+  font-size: 10px;
+  text-align: center;
+  border-top: 2px solid #eaebe6;
+  padding-top: 18px;
+}
+
 @media (min-width: 600px) {
   /******************************************************************
 Stylesheet: 通常ディスプレイサイズ
@@ -189,7 +227,7 @@ Stylesheet: 960px以上のモニタで適用（pc用）
   .font-lg, .main-title {
     font-size: 36px;
   }
-  .mb-lg, .header, .about, .contents {
+  .mb-lg, .header, .about, .contents, .inquiry {
     margin-bottom: 150px !important;
   }
   .pb-lg {

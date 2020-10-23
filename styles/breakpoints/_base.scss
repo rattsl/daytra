@@ -159,3 +159,54 @@ Stylesheet: ベーススタイル(スマホ)
     width: 100%;
   }
 }
+
+.inquiry{
+  @extend .content-width;
+  @extend .mb-lg;
+
+  &__title{
+    @extend .mb-sm;
+    text-align: center;
+  }
+
+  &__p{
+    text-align: center;
+  }
+
+  &__input{
+    @extend .mb-sm;
+
+    margin: 0 auto;
+    display: block;
+    border: 3px solid $cBgGray;
+    width: 100%;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+    border-radius: 50px;
+    
+  }
+
+  &__button{
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    padding-top: 20px; 
+    padding-bottom: 20px;
+    background-color: $clightRed;
+    border: none;
+    border-radius: 5px;
+    color: $cWhite;
+    font-size: 1.3rem;
+  }
+}
+
+.footer{
+  @extend .content-width;
+
+  &__copyright{
+    font-size: 10px;
+    text-align: center;
+    border-top: 2px solid $cBgGray;
+    padding-top: 18px; 
+  }
+}
