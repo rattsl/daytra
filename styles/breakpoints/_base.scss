@@ -2,7 +2,54 @@
 Stylesheet: ベーススタイル(スマホ)
 ******************************************************************/
 
+//Font
+.font-sm{
+  font-size: 14px;
+}
+.font-md{
+  font-size: 17px;
+}
+.font-lr{
+  font-size: 17px;
+}
+.font-lg{
+  font-size: 25x;
+}
+
+//margin,padding
+.mb-sm{
+  margin-bottom: 16px !important;
+}
+.mb-lg{
+  margin-bottom: 80px !important;
+}
+.pb-sm{
+  padding-bottom: 16px !important;
+}
+.pb-lg{
+  padding-bottom: 80px !important;
+}
+
+.content-width{
+  width: 90%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+
+.main-title{
+  @extend .font-lg;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.sub-title{
+  @extend .font-sm;
+  color: $cSubTitle;
+}
+
 .header{
+  @extend .mb-lg;
+
   position: relative;
   top: 0;
   left: 0;
@@ -74,5 +121,24 @@ Stylesheet: ベーススタイル(スマホ)
       transform: translateX(-50%);
       white-space: nowrap;
     }
+  }
+}
+
+.about{
+  @extend .content-width;
+  @extend .mb-lg;
+  
+  &__title{
+    @extend .mb-sm;
+    text-align: center;
+  }
+
+  &__img{
+    @extend .mb-sm;
+
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
   }
 }
