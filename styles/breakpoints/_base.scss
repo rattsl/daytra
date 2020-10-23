@@ -142,3 +142,20 @@ Stylesheet: ベーススタイル(スマホ)
     width: 100%;
   }
 }
+
+.contents{
+  @extend .content-width;
+  @extend .mb-lg;
+
+  &__title{
+    @extend .mb-sm;
+    text-align: center;
+  }
+
+  &__img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
