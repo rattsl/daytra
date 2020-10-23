@@ -36,8 +36,55 @@ Stylesheet: ベーススタイル(スマホ)
 
 .header__hero {
   position: relative;
+  left: 0;
+  top: 0;
   height: 630px;
   overflow: hidden;
+}
+
+.header__hero > .t-top {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.header__hero > .t-middle {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.header__hero > .t-bottom {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.header__hero > .p-top {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.header__hero > .p-bottom {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  white-space: nowrap;
 }
 
 @media (min-width: 600px) {

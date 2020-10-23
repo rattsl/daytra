@@ -30,8 +30,49 @@ Stylesheet: ベーススタイル(スマホ)
 
   &__hero{
     position: relative;
+    left: 0;
+    top: 0;
     height: 630px;
     overflow: hidden;
-  
+
+    & > .t-top{
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+    }
+
+    & > .t-middle{
+      position: absolute;
+      top: 37%;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+    }
+
+    & > .t-bottom{
+      position: absolute;
+      top: 44%;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+    }
+
+    & > .p-top{
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+    }
+
+    & > .p-bottom{
+      position: absolute;
+      top: 65%;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+    }
   }
 }
