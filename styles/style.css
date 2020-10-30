@@ -34,10 +34,10 @@ Stylesheet: ベーススタイル(スマホ)
   padding-bottom: 80px !important;
 }
 
-.content-width, .about, .contents, .inquiry, .footer {
+.content-width, .header__inner, .about, .contents, .inquiry, .footer {
   width: 90%;
   margin: 0 auto;
-  max-width: 1070px;
+  max-width: 800px;
 }
 
 .main-title {
@@ -56,9 +56,14 @@ Stylesheet: ベーススタイル(スマホ)
   width: 100%;
 }
 
+.header__inner {
+  height: 100px;
+}
+
 .header__title {
+  margin: 0 auto;
   text-align: center;
-  margin-top: 20px;
+  padding-top: 15px;
 }
 
 .header__ul {
@@ -70,7 +75,8 @@ Stylesheet: ベーススタイル(スマホ)
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0;
-  margin: 10px 40px;
+  margin: 10px 20px;
+  white-space: nowrap;
 }
 
 .header__li {
@@ -81,7 +87,7 @@ Stylesheet: ベーススタイル(スマホ)
           flex: 1;
 }
 
-.header__hero {
+.header__hero-mobile {
   position: relative;
   left: 0;
   top: 0;
@@ -89,7 +95,7 @@ Stylesheet: ベーススタイル(スマホ)
   overflow: hidden;
 }
 
-.header__hero > .t-top {
+.header__hero-mobile > .t-top {
   position: absolute;
   top: 30%;
   left: 50%;
@@ -98,7 +104,7 @@ Stylesheet: ベーススタイル(スマホ)
   white-space: nowrap;
 }
 
-.header__hero > .t-middle {
+.header__hero-mobile > .t-middle {
   position: absolute;
   top: 37%;
   left: 50%;
@@ -107,7 +113,7 @@ Stylesheet: ベーススタイル(スマホ)
   white-space: nowrap;
 }
 
-.header__hero > .t-bottom {
+.header__hero-mobile > .t-bottom {
   position: absolute;
   top: 44%;
   left: 50%;
@@ -116,7 +122,7 @@ Stylesheet: ベーススタイル(スマホ)
   white-space: nowrap;
 }
 
-.header__hero > .p-top {
+.header__hero-mobile > .p-top {
   position: absolute;
   top: 60%;
   left: 50%;
@@ -125,13 +131,17 @@ Stylesheet: ベーススタイル(スマホ)
   white-space: nowrap;
 }
 
-.header__hero > .p-bottom {
+.header__hero-mobile > .p-bottom {
   position: absolute;
   top: 65%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   white-space: nowrap;
+}
+
+.header__hero-desktop {
+  display: none;
 }
 
 .about__title {
@@ -206,6 +216,43 @@ Stylesheet: 通常ディスプレイサイズ
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__title {
+    padding: 0;
+    margin: 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    text-align: start;
+  }
+  .header__ul {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0;
+    width: 400px;
+  }
+  .header__li {
+    padding: 0 10px;
+  }
+  .header__li > a {
+    color: black;
+    font-weight: 900;
+  }
+  .header__hero-mobile {
+    display: none;
+  }
+  .header__hero-desktop {
+    display: inline-block;
+  }
+  .header__img {
+    width: 100%;
   }
 }
 

@@ -49,15 +49,21 @@ Stylesheet: ベーススタイル(スマホ)
 
 .header{
   @extend .mb-lg;
-
+  
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
+  
+  &__inner{
+    @extend .content-width;
+    height: 100px;
+  }
 
   &__title{
+    margin: 0 auto;
     text-align: center;
-    margin-top: 20px;
+    padding-top: 15px;
   }
 
   &__ul{
@@ -65,7 +71,8 @@ Stylesheet: ベーススタイル(スマホ)
     list-style: none;
     justify-content: center;
     padding: 0;
-    margin: 10px 40px;
+    margin: 10px 20px;
+    white-space: nowrap;
   }
   
   &__li{
@@ -75,7 +82,7 @@ Stylesheet: ベーススタイル(スマホ)
 
   }
 
-  &__hero{
+  &__hero-mobile{
     position: relative;
     left: 0;
     top: 0;
@@ -121,6 +128,10 @@ Stylesheet: ベーススタイル(スマホ)
       transform: translateX(-50%);
       white-space: nowrap;
     }
+  }
+
+  &__hero-desktop{
+    display: none;
   }
 }
 
