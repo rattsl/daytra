@@ -283,6 +283,24 @@ Stylesheet: 通常ディスプレイサイズ
     width: 50%;
     margin-left: 10px;
   }
+  .contents__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contents__beginner {
+    margin-right: 20px;
+  }
+  .contents__intermediate {
+    margin: 0 20px 0 20px;
+  }
+  .contents__advanced {
+    margin-left: 20px;
+  }
 }
 
 @media (min-width: 960px) {

@@ -48,8 +48,6 @@ Stylesheet: 通常ディスプレイサイズ
 .about{
 
   &__title{
-    @extend .mb-lg;
-
     margin-bottom: 40px;
   }
 
@@ -74,5 +72,24 @@ Stylesheet: 通常ディスプレイサイズ
   &__texts{
     width: 50%;
     margin-left: 10px;
+  }
+}
+
+.contents{
+  &__inner{
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__beginner{
+    margin-right: 20px; 
+  }
+
+  &__intermediate{
+    margin: 0 20px 0 20px;
+  }
+
+  &__advanced{
+    margin-left: 20px; 
   }
 }
