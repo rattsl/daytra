@@ -87,6 +87,11 @@ Stylesheet: ベーススタイル(スマホ)
           flex: 1;
 }
 
+.header__li > a {
+  color: black;
+  font-weight: 900;
+}
+
 .header__hero-mobile {
   position: relative;
   left: 0;
@@ -227,6 +232,7 @@ Stylesheet: 通常ディスプレイサイズ
         -ms-flex: 1;
             flex: 1;
     text-align: start;
+    white-space: nowrap;
   }
   .header__ul {
     -webkit-box-flex: 1;
@@ -239,10 +245,6 @@ Stylesheet: 通常ディスプレイサイズ
   }
   .header__li {
     padding: 0 10px;
-  }
-  .header__li > a {
-    color: black;
-    font-weight: 900;
   }
   .header__hero-mobile {
     display: none;
@@ -300,6 +302,16 @@ Stylesheet: 通常ディスプレイサイズ
   }
   .contents__advanced {
     margin-left: 20px;
+  }
+  .inquiry__input {
+    width: 50%;
+  }
+  .inquiry__button {
+    width: 35%;
+  }
+  .footer__copyright {
+    font-size: 12px;
+    text-align: right;
   }
 }
 

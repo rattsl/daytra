@@ -15,6 +15,7 @@ Stylesheet: 通常ディスプレイサイズ
     margin: 0;
     flex: 1;
     text-align: start;
+    white-space: nowrap;
   }
 
   &__ul{
@@ -25,11 +26,6 @@ Stylesheet: 通常ディスプレイサイズ
 
   &__li{
     padding: 0 10px;
-
-    & > a{
-    color: $cBlack;
-    font-weight: 900;
-    }
   }
 
   &__hero-mobile{
@@ -91,5 +87,23 @@ Stylesheet: 通常ディスプレイサイズ
 
   &__advanced{
     margin-left: 20px; 
+  }
+}
+
+.inquiry{
+
+  &__input{
+    width: 50%;
+  }
+
+  &__button{
+    width: 35%;
+  }
+}
+
+.footer{
+  &__copyright{
+    font-size: 12px;
+    text-align: right;
   }
 }

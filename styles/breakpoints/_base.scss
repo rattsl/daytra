@@ -80,6 +80,10 @@ Stylesheet: ベーススタイル(スマホ)
     text-align: center;
     flex: 1;
 
+    & > a{
+      color: $cBlack;
+      font-weight: 900;
+      }
   }
 
   &__hero-mobile{
